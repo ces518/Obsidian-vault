@@ -11,10 +11,14 @@
             "id": "cbf9674c5e836c20",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "개발공부/php/Spring 과 Laravel 의 DB 커넥션 관리 방식 차이.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spring 과 Laravel 의 DB 커넥션 관리 방식 차이"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "개발공부/php/Spring 과 Laravel 의 DB 커넥션 관리 방식 차이.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "Spring 과 Laravel 의 DB 커넥션 관리 방식 차이 의 백링크"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "개발공부/php/Spring 과 Laravel 의 DB 커넥션 관리 방식 차이.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "Spring 과 Laravel 의 DB 커넥션 관리 방식 차이 의 나가는 링크"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "개발공부/php/Spring 과 Laravel 의 DB 커넥션 관리 방식 차이.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "Spring 과 Laravel 의 DB 커넥션 관리 방식 차이 의 개요"
             }
           },
           {
@@ -167,13 +174,23 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "9f8939134f5857d3",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,11 +203,18 @@
       "bases:새 베이스 생성하기": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "omnisearch:Omnisearch": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "cbf9674c5e836c20",
   "lastOpenFiles": [
+    "스터디/라라벨/1장 개요.md",
+    "개발공부/php/Spring 과 Laravel 의 DB 커넥션 관리 방식 차이.md",
+    "개발공부/php",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/13장 증권 거래소.md",
+    "스터디/라라벨",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초",
     "무제.canvas",
     "2026-02-17.md",
     "무제.base",
