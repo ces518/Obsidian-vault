@@ -23,12 +23,14 @@
             "id": "b3f0de5061d80641",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "스터디/라라벨/images/Pasted image 20260217210334.png"
+                "file": "스터디/라라벨/4장 HTTP 요청과 응답.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260217210334"
+              "icon": "lucide-file",
+              "title": "4장 HTTP 요청과 응답"
             }
           }
         ],
@@ -218,10 +220,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9f8939134f5857d3",
+  "active": "b3f0de5061d80641",
   "lastOpenFiles": [
-    "스터디/라라벨/3장 MVC 와 ADR.md",
     "스터디/라라벨/images/Pasted image 20260217210334.png",
+    "스터디/라라벨/4장 HTTP 요청과 응답.md",
+    "스터디/라라벨/3장 MVC 와 ADR.md",
     "스터디/라라벨/images/Pasted image 20260217210256.png",
     "스터디/라라벨/images/Pasted image 20260217210244.png",
     "스터디/라라벨/2장 라라벨 아키텍처.md",
