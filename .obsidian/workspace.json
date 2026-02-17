@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "스터디/라라벨/4장 HTTP 요청과 응답.md",
+                "file": "스터디/라라벨/5장 데이터베이스.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4장 HTTP 요청과 응답"
+              "title": "5장 데이터베이스"
             }
           }
         ],
@@ -222,8 +222,9 @@
   },
   "active": "b3f0de5061d80641",
   "lastOpenFiles": [
-    "스터디/라라벨/images/Pasted image 20260217210334.png",
     "스터디/라라벨/4장 HTTP 요청과 응답.md",
+    "스터디/라라벨/5장 데이터베이스.md",
+    "스터디/라라벨/images/Pasted image 20260217210334.png",
     "스터디/라라벨/3장 MVC 와 ADR.md",
     "스터디/라라벨/images/Pasted image 20260217210256.png",
     "스터디/라라벨/images/Pasted image 20260217210244.png",
