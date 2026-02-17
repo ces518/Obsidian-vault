@@ -23,14 +23,12 @@
             "id": "b3f0de5061d80641",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "image",
               "state": {
-                "aFile": "스터디/라라벨/2장 라라벨 아키텍처.md",
-                "bFile": "스터디/라라벨/2장 라라벨 아키텍처.md",
-                "aRef": ""
+                "file": "스터디/라라벨/images/Pasted image 20260217210334.png"
               },
-              "icon": "diff",
-              "title": "Diff: 2장 라라벨 아키텍처  (Working Tree)"
+              "icon": "lucide-image",
+              "title": "Pasted image 20260217210334"
             }
           }
         ],
@@ -220,11 +218,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b3f0de5061d80641",
+  "active": "9f8939134f5857d3",
   "lastOpenFiles": [
+    "스터디/라라벨/3장 MVC 와 ADR.md",
+    "스터디/라라벨/images/Pasted image 20260217210334.png",
+    "스터디/라라벨/images/Pasted image 20260217210256.png",
+    "스터디/라라벨/images/Pasted image 20260217210244.png",
+    "스터디/라라벨/2장 라라벨 아키텍처.md",
     "스터디/라라벨/images/Pasted image 20260217204243.png",
     "스터디/라라벨/images/Pasted image 20260217204323.png",
-    "스터디/라라벨/2장 라라벨 아키텍처.md",
     "스터디/라라벨/images",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/13장 증권 거래소.md",
     "개발공부/테스트/서킷 브레이커가 테스트를 더 어렵게 만드는 이유.md",
@@ -236,8 +238,6 @@
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260217042229.png",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260217042212.png",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260217042153.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260217042126.png",
-    "Pasted image 20260217042006.png",
     "개발공부/php/Spring 과 Laravel 의 DB 커넥션 관리 방식 차이.md",
     "개발공부/php",
     "스터디/라라벨",
