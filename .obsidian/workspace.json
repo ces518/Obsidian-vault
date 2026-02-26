@@ -4,35 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "1ca83a6c4d7ea9a0",
+        "id": "63a9b2d394d1da6c",
         "type": "tabs",
         "children": [
           {
-            "id": "63019b748f50b1b6",
+            "id": "cccc87c2b0a1bb80",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260225090440.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260225090440"
-            }
-          },
-          {
-            "id": "2fcae40d6c7c2132",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260226083440.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260226083440"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -220,6 +205,7 @@
   },
   "active": "eec298779987634b",
   "lastOpenFiles": [
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260226083440.png",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/8장 분산 이메일 서비스.md",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260227083205.png",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260227083131.png",
@@ -229,7 +215,6 @@
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260226084508.png",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260226083811.png",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260226083555.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260226083440.png",
     "Pasted image 20260226083120.png",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/9장 S3 와 유사한 객체 저장소.md",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/10장 실시간 게임 순위표.md",
