@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772293037352-4am02r5ki",
+  "title": "Summarize Chapter 7 core points",
+  "titleGenerationStatus": "success",
+  "createdAt": 1772293037352,
+  "updatedAt": 1772293075847,
+  "lastResponseAt": 1772293075847,
+  "sessionId": "eb760c6b-c7f8-4cc4-8162-bcc12c001f89",
+  "sdkSessionId": "eb760c6b-c7f8-4cc4-8162-bcc12c001f89",
+  "currentNote": "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/7장 호텔 예약 시스템.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 10591,
+    "cacheReadInputTokens": 19682,
+    "contextWindow": 200000,
+    "contextTokens": 30274,
+    "percentage": 15
+  }
+}

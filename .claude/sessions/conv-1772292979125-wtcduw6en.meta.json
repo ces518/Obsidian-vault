@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772292979125-wtcduw6en",
+  "title": "Start conversation",
+  "titleGenerationStatus": "success",
+  "createdAt": 1772292979126,
+  "updatedAt": 1772292996230,
+  "lastResponseAt": 1772292987141,
+  "sessionId": "ef7d1752-fadd-48d7-9bfd-d2979a0122cf",
+  "sdkSessionId": "ef7d1752-fadd-48d7-9bfd-d2979a0122cf",
+  "currentNote": "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260228183007.png",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 3,
+    "cacheCreationInputTokens": 19244,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 19247,
+    "percentage": 10
+  }
+}
