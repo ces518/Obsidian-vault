@@ -11,12 +11,14 @@
             "id": "cccc87c2b0a1bb80",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173443.png"
+                "file": "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/6장 광고 클릭 이벤트 집계.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260302173443"
+              "icon": "lucide-file",
+              "title": "6장 광고 클릭 이벤트 집계"
             }
           }
         ]
@@ -217,10 +219,11 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "eec298779987634b",
+  "active": "cccc87c2b0a1bb80",
   "lastOpenFiles": [
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173443.png",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173523.png",
-    "스터디/6장 광고 클릭 이벤트 집계.md",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/6장 광고 클릭 이벤트 집계.md",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173859.png",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173844.png",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173828.png",
@@ -230,7 +233,6 @@
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173736.png",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173714.png",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173700.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173643.png",
     "업무/근거 계좌와 연결 계좌.md",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/7장 호텔 예약 시스템.md",
     "Excalidraw/Drawing 2026-03-01 00.36.34.excalidraw.md",
