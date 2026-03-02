@@ -11,14 +11,12 @@
             "id": "cccc87c2b0a1bb80",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "업무/근거 계좌와 연결 계좌.md",
-                "mode": "source",
-                "source": false
+                "file": "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173443.png"
               },
-              "icon": "lucide-file",
-              "title": "근거 계좌와 연결 계좌"
+              "icon": "lucide-image",
+              "title": "Pasted image 20260302173443"
             }
           }
         ]
@@ -219,24 +217,26 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "9f8939134f5857d3",
+  "active": "eec298779987634b",
   "lastOpenFiles": [
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/7장 호텔 예약 시스템.md",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173523.png",
+    "스터디/6장 광고 클릭 이벤트 집계.md",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173859.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173844.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173828.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173817.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173805.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173753.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173736.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173714.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173700.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260302173643.png",
     "업무/근거 계좌와 연결 계좌.md",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/7장 호텔 예약 시스템.md",
     "Excalidraw/Drawing 2026-03-01 00.36.34.excalidraw.md",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/8장 분산 이메일 서비스.md",
     "Excalidraw",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/9장 S3 와 유사한 객체 저장소.md",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260228183007.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260228183303.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260228183251.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260228183241.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260228183229.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260228183215.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260228183205.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260228183152.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260228183137.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260228183119.png",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/10장 실시간 게임 순위표.md",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/11장 결제 시스템.md",
     "개발공부/DB/innodb_autoinc_lock_mode 와 replication 문제.md",
