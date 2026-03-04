@@ -3,11 +3,10 @@
   "title": "Verify source and linked account content",
   "titleGenerationStatus": "success",
   "createdAt": 1772345342010,
-  "updatedAt": 1772345583668,
+  "updatedAt": 1772495535653,
   "lastResponseAt": 1772345583668,
   "sessionId": "339776ad-5433-4b1d-bf50-43bb457bccba",
   "sdkSessionId": "339776ad-5433-4b1d-bf50-43bb457bccba",
-  "currentNote": "업무/근거 계좌와 연결 계좌.md",
   "usage": {
     "model": "sonnet",
     "inputTokens": 1,

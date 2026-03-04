@@ -1,0 +1,20 @@
+{
+  "id": "conv-1772495571338-yi6nojl53",
+  "title": "Explain consistent hash ring",
+  "titleGenerationStatus": "success",
+  "createdAt": 1772495571340,
+  "updatedAt": 1772495582369,
+  "lastResponseAt": 1772495582369,
+  "sessionId": "9ebc0692-ab01-4d9b-b238-945b3da17659",
+  "sdkSessionId": "9ebc0692-ab01-4d9b-b238-945b3da17659",
+  "currentNote": "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/6장 광고 클릭 이벤트 집계.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 16327,
+    "cacheReadInputTokens": 19685,
+    "contextWindow": 200000,
+    "contextTokens": 36013,
+    "percentage": 18
+  }
+}
