@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "8c7779bd333166b5",
+        "id": "44c3f43af0ef8712",
         "type": "tabs",
         "children": [
           {
-            "id": "b1467ee6faaf66c2",
+            "id": "6f7a6aa09d4cb798",
             "type": "leaf",
             "state": {
               "type": "image",
               "state": {
-                "file": "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260305201713.png"
+                "file": "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260314161628.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20260305201713"
+              "title": "Pasted image 20260314161628"
             }
           }
         ]
@@ -76,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 390.5,
-    "collapsed": true
+    "width": 390.5
   },
   "right": {
     "id": "f723367c69d959b1",
@@ -193,13 +192,25 @@
               "icon": "bot",
               "title": "Claudian"
             }
+          },
+          {
+            "id": "5420d70cebfbea04",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/3장 구글 맵.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "각주"
+            }
           }
         ],
         "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 564.5
+    "width": 563.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,30 +229,41 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "b1467ee6faaf66c2",
+  "active": "eec298779987634b",
   "lastOpenFiles": [
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/5장 지표 모니터링 및 경보 시스템.md",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260312212244.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/3장 구글 맵.md",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260314161929.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260314161718.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260314161628.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260314161441.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260314161343.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260314161107.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260314160634.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260314160343.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260314154844.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260314153539.png",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/4장 분산 메세지 큐.md",
+    "개발공부/MQ/Kafka 핵심 구조.md",
+    "AI/Claude Plugins.md",
+    "AI",
+    "개발공부/성능/Sequential write throughput이 낮아지는 문제.md",
+    "개발공부/성능",
+    "개발공부/MQ/메세지 큐 에서 폴링모델을 기본으로 사용하는 이유.md",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/6장 광고 클릭 이벤트 집계.md",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260306230012.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260306225945.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260306225928.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260306225909.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260306225850.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260306225829.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260305201805.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260305201750.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260305201727.png",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images/Pasted image 20260305201713.png",
+    "개발공부/MQ",
+    "무제.base",
     "업무/근거 계좌와 연결 계좌.md",
+    "개발공부/DB/binlog_format 값별 동작.md",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/10장 실시간 게임 순위표.md",
+    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/5장 지표 모니터링 및 경보 시스템.md",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/7장 호텔 예약 시스템.md",
     "Excalidraw/Drawing 2026-03-01 00.36.34.excalidraw.md",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/8장 분산 이메일 서비스.md",
     "Excalidraw",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/9장 S3 와 유사한 객체 저장소.md",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/10장 실시간 게임 순위표.md",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/11장 결제 시스템.md",
     "개발공부/DB/innodb_autoinc_lock_mode 와 replication 문제.md",
-    "개발공부/DB/binlog_format 값별 동작.md",
     "개발공부/DB/innodb_autoinc_lock_mode 값별 동작.md",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/12장 전자지갑.md",
     "개발공부/DB",
@@ -252,18 +274,9 @@
     "스터디/라라벨/2장 라라벨 아키텍처.md",
     "스터디/라라벨/images",
     "개발공부/테스트/서킷 브레이커가 테스트를 더 어렵게 만드는 이유.md",
-    "스터디/라라벨/1장 개요.md",
     "개발공부/테스트",
     "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초/images",
-    "개발공부/php/Spring 과 Laravel 의 DB 커넥션 관리 방식 차이.md",
     "개발공부/php",
-    "스터디/라라벨",
-    "스터디/가상 면접 사례로 배우는 대규모 시스템 설계 기초",
-    "무제.canvas",
-    "2026-02-17.md",
-    "무제.base",
-    "Excalidraw/Drawing 2026-02-17 03.44.13.excalidraw.md",
-    "업무",
-    "환영합니다!.md"
+    "무제.canvas"
   ]
 }
