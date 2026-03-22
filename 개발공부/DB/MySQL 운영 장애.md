@@ -39,44 +39,13 @@ write 증가 → binlog 폭증 → purge 안됨 (replica lag / expire 설정 과
 
 # 🧠 2. MySQL 로그 구조 정리
 
-## binlog
-
-- **용도**: replication / CDC
-- **파일 형태**: 파일 단위 (`mysql-bin.000001`)
-- **특징**: 무한 증가 → 직접 삭제 필요
-
-## relay log
-
-- **용도**: replica가 가져온 binlog (실행 대기 큐)
-- **특징**: lag이 있으면 계속 쌓임
-
-## redo log
-
-- **용도**: crash recovery
-- **특징**: 고정 크기 (순환) → 디스크 원인 아님
-
-## undo log
-
-- **용도**: rollback + MVCC
-- **특징**: long transaction 시 증가
+![[MySQL 로그 시스템 (Binlog, Relay, Redo, Undo)#5. 전체 비교]]
 
 ---
 
 # 🔄 3. Replication 구조
 
-```
-Primary
-  └─ binlog 생성
-         ↓
-Replica (IO Thread)
-  └─ relay log 저장
-         ↓
-Replica (SQL Thread)
-  └─ 재실행
-```
-
-> [!note]
-> 핵심은 **"로그 복사 → 다시 실행"**이다.
+![[MySQL 로그 시스템 (Binlog, Relay, Redo, Undo)#2. Relay Log (릴레이 로그)#동작 방식]]
 
 ---
 
