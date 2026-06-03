@@ -26,3 +26,10 @@
 /.smart-env/smart_env.json
 /.claude/sessions/conv-1772495571338-yi6nojl53.meta.json
 /.claude/sessions/conv-1772495571338-yi6nojl53.meta.json
+# --- wiki-refactor hygiene (CLAUDE.md §14) ---
+.DS_Store
+.trash/
+.claude/worktrees/
+.claudian/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
