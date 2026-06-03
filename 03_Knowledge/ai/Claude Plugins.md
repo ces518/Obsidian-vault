@@ -8,6 +8,16 @@ tags:
   - ai
 ---
 
+# Claude Plugins
+
+## 개요
+
+Claude 작업 흐름을 보강하는 플러그인 세 가지(Superpowers, Clarify, Session Wrap)에 대한 메모.
+
+## 한 줄 요약
+
+> 아이디어 실행(Superpowers), 모호한 요구사항의 스펙화(Clarify), 세션 종료 시 정리·문서화(Session Wrap)로 작업 흐름을 보강하는 Claude 플러그인들이다.
+
 # TODO
 1️⃣ Superpowers — 아이디어에서 실행까지 한 흐름으로  
 브레인스토밍 → 플랜 작성 → 실행,  

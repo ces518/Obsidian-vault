@@ -8,6 +8,16 @@ tags:
   - mq
 ---
 
+## 개요
+
+Kafka는 토픽을 여러 파티션으로 분할해 처리량과 병렬성을 확보하고, 각 파티션을 여러 브로커에 replica로 복제하여 leader-follower 구조로 고가용성과 데이터 내구성을 보장한다.
+
+## 한 줄 요약
+
+> Kafka는 토픽을 파티션으로 나눠 병렬 처리하고, 파티션을 복제(replica)·ISR·High Watermark로 묶어 내구성과 읽기 일관성을 보장한다.
+
+---
+
 ## 1. 토픽과 파티션
 
 Kafka는 **처리량 확장과 병렬 처리를 위해 토픽을 여러 파티션으로 분할**한다.
@@ -160,3 +170,13 @@ Kafka는 토픽을 여러 파티션으로 분할해 처리량과 병렬성을 �
 고가용성과 데이터 내구성을 보장한다.
 
 ---
+
+## 면접식 설명
+
+> Kafka는 토픽을 여러 파티션으로 나눠 병렬 처리 단위를 만들고, Producer의 Partitioner가 key hash나 round-robin으로 메시지를 어떤 파티션에 보낼지 결정합니다. 각 파티션은 여러 브로커에 leader-follower replica로 복제되며, Producer와 Consumer는 leader와만 통신하고 follower는 leader 로그를 복제합니다. leader와 충분히 동기화된 replica 집합을 ISR이라 하며, ISR은 leader election 후보이자 write durability 기준이 됩니다. Consumer는 ISR이 모두 복제한 마지막 offset인 High Watermark까지만 읽을 수 있어 존재하지 않는 메시지를 읽는 상황이 발생하지 않습니다. leader 장애 시에는 ISR follower 중 하나가 leader로 승격되어 서비스가 지속됩니다. 정리하면 파티션은 처리량 확장, replica는 고가용성, ISR은 동기화 상태 관리, HW는 읽기 일관성을 담당합니다.
+
+---
+
+## 관련 문서
+
+- [[메세지 큐 에서 폴링모델을 기본으로 사용하는 이유]]

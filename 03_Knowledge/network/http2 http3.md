@@ -17,6 +17,10 @@ created: 2026-05-05
 HOL(Head-of-Line) Blocking 문제가 어떻게 진화해 왔는지, QUIC이 OSI 계층에서 어디에 위치하는지,
 HTTP/3가 도입된 이후 HTTPS의 처리 방식이 어떻게 바뀌었는지 다룬다.
 
+## 한 줄 요약
+
+> HTTP/2까지는 TCP, HTTP/3부터는 UDP 기반 QUIC을 쓰며, QUIC이 손실을 stream 단위로 격리해 TCP 계층 HOL Blocking을 해결한다. HTTP/3를 써도 HTTPS는 그대로이고 전송 기반만 TCP+TLS에서 QUIC+UDP로 바뀐다.
+
 ---
 
 ## 1. HTTP 버전별 전송 기반
@@ -340,3 +344,18 @@ HTTP/2 HTTPS              HTTP/3 HTTPS
 > 7. QUIC ≈ **L4.5 (user-space transport)** — L4 전송 + L5 세션 + TLS 보안 통합
 > 8. **HTTP/3 ≠ HTTPS 안 씀** — URL은 여전히 `https://`, 내부 스택만 QUIC + UDP로 변경
 > 9. QUIC에는 **TLS 1.3이 내장**되어 있어 별도의 TLS 핸드셰이크 불필요
+
+---
+
+## 면접식 설명
+
+> HTTP/1.1은 한 TCP 연결에서 요청/응답 순서 제약 때문에 앞 요청이 느리면 뒤가 막히는 애플리케이션 계층 HOL Blocking이 있었습니다. HTTP/2는 하나의 TCP 연결에서 여러 stream을 multiplexing해 이 HTTP 계층 HOL은 완화했지만, TCP가 순서 보장 바이트 스트림이라 segment 하나가 유실되면 뒤 segment가 도착해도 다른 stream까지 같이 막히는 TCP 계층 HOL이 남았습니다. HTTP/3는 UDP 위에 QUIC을 두어 손실을 stream 단위로 격리하므로, 유실된 stream만 멈추고 나머지는 계속 전달됩니다. UDP 자체는 신뢰성이 없지만 QUIC이 ACK, 재전송, 흐름/혼잡 제어, TLS 1.3을 user-space에서 직접 구현하고, UDP를 고른 이유는 방화벽/NAT/OS 호환성과 커널 업데이트 없는 배포 용이성 때문입니다. QUIC은 OSI에 딱 맞지 않아 L4.5~L5의 user-space transport로 보며, HTTP/3를 써도 URL은 그대로 https://이고 전송 스택만 QUIC+UDP로 바뀝니다.
+
+---
+
+## 관련 문서
+
+- [[https 와 SNI]]
+- [[TCP 와 UDP]]
+- [[Maximum Segment Size]]
+- [[연결이라는 착각과 AWS ALB]]

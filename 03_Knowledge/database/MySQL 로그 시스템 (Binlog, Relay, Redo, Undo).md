@@ -12,6 +12,16 @@ tags:
 created: 2026-03-22
 ---
 
+# 개요
+
+MySQL의 네 가지 로그(Binlog, Relay, Redo, Undo)가 각각 어떤 레벨에서 어떤 목적으로 동작하고, 디스크에 어떤 영향을 주며, 커밋 시 어떤 순서로 흐르는지 비교 정리한 문서다.
+
+## 한 줄 요약
+
+> Binlog(Server, 복제·PITR)와 Relay(Server, Replica 버퍼)는 논리적 로그라 무한 증가할 수 있고, Redo(InnoDB, crash recovery, 고정 크기 순환)와 Undo(InnoDB, rollback·MVCC)는 엔진 레벨이며, 커밋은 redo prepare → binlog write → commit의 2-phase commit으로 일관성을 맞춘다.
+
+---
+
 # 1. Binary Log (Binlog)
 
 ## 개요
@@ -218,3 +228,18 @@ TX2: SELECT name FROM users WHERE id=1;
 
 > [!important] 2-Phase Commit
 > InnoDB의 redo log와 MySQL의 binlog 간 일관성을 보장하기 위해 내부적으로 **prepare → binlog write → commit** 순서로 진행한다. Crash 시 이 순서를 기반으로 커밋 여부를 판단한다.
+
+---
+
+# 7. 면접식 설명
+
+> MySQL에는 성격이 다른 네 가지 로그가 있다. Binlog는 Server 레벨 로그로 변경 SQL이나 행 변화를 기록해 복제·PITR·CDC에 쓰이며, 무한 증가하므로 expire나 purge로 직접 관리해야 한다. Relay log는 Replica에만 있는 Server 레벨 로그로, I/O Thread가 Master binlog를 받아 저장하고 SQL Thread가 이를 읽어 적용하는 중간 버퍼다. Redo log는 InnoDB 레벨의 물리적 로그로 crash recovery용이며, WAL 원리에 따라 커밋 시 순차 I/O로 redo만 먼저 쓰고 데이터 파일 flush는 비동기로 처리하고, 고정 크기를 순환 사용하므로 디스크 FULL의 원인이 되지 않는다. Undo log는 InnoDB의 논리적 로그로 변경 전 값을 기록해 rollback과 MVCC consistent read를 지원하며, 장기 트랜잭션이 있으면 purge되지 못해 비대해진다. 커밋 시점에는 redo prepare → binlog write → commit의 2-phase commit으로 redo와 binlog 간 일관성을 보장한다.
+
+---
+
+# 8. 관련 문서
+
+- [[binlog_format 값별 동작]]
+- [[Binlog Purge 동작과 영향]]
+- [[MySQL 운영 장애]]
+- [[MySQL Repeatable Read 격리 수준]]

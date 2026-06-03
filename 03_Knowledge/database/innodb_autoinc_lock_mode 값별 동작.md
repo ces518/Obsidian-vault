@@ -14,6 +14,10 @@ created: 2026-03-21
 
 `innodb_autoinc_lock_mode`는 **AUTO_INCREMENT 값을 할당할 때 InnoDB가 어떤 잠금 전략을 사용할지** 결정한다.
 
+## 한 줄 요약
+
+> 0(Traditional)은 모든 INSERT를 AUTO-INC 테이블 락으로 직렬화해 연속성은 높지만 동시성이 낮고, 2(Interleaved)는 mutex만 써서 동시성이 가장 높은 대신 연속성 보장이 없고 SBR에서 주의가 필요하며, 1(Consecutive)이 일반적인 균형점이다.
+
 ---
 
 ## 0 — Traditional(전통 모드)
@@ -125,3 +129,18 @@ INSERT INTO t VALUES (...), (...), (...);
 - `=2`는 **최대 동시성**을 얻는 대신, 동시 INSERT에서 ID가 **interleave**될 수 있어 **연속성은 보장되지 않는다**.
 - `=0`은 **연속성/재현성**이 강하지만, 동시성이 가장 낮다.
 - `=1`은 일반적인 환경에서 **균형점**이 된다.
+
+---
+
+## 면접식 설명
+
+> `innodb_autoinc_lock_mode`는 AUTO_INCREMENT 값을 배정할 때의 잠금 전략을 결정한다. 0(Traditional)은 모든 INSERT에서 AUTO-INC 테이블 락을 statement가 끝날 때까지 잡아 완전 직렬화하므로 ID가 항상 연속이고 SBR에서 안전하지만 동시성이 매우 낮다. 1(Consecutive)은 단일 row INSERT는 가벼운 mutex로 처리하고 `INSERT … SELECT`나 `LOAD DATA`, 다중 row 같은 bulk 계열만 테이블 락으로 직렬화해, 대부분의 INSERT에서 동시성을 개선하면서 statement 단위 연속성과 SBR 안전성을 유지한다. 2(Interleaved)는 테이블 락 없이 mutex만 써서 여러 트랜잭션이 동시에 값을 배정받아 동시성이 가장 높지만, 단조 증가와 유니크만 보장하고 gap이 생길 수 있으며, 마스터와 slave의 동시 실행 순서가 달라지면 값이 어긋나 SBR에서 주의가 필요하다. 기본값은 5.1~5.7이 1, 8.0이 2다.
+
+---
+
+## 관련 문서
+
+- [[innodb_autoinc_lock_mode 와 replication 문제]]
+- [[binlog_format 값별 동작]]
+- [[MySQL 로그 시스템 (Binlog, Relay, Redo, Undo)]]
+- [[MySQL Repeatable Read 격리 수준]]

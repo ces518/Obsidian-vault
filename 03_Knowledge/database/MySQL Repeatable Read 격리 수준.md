@@ -13,6 +13,16 @@ tags:
 created: 2026-03-22
 ---
 
+# 개요
+
+MySQL(InnoDB)의 기본 격리 수준인 REPEATABLE READ가 MVCC와 gap lock으로 Phantom Read까지 방지하는 원리, READ COMMITTED와의 잠금/복제 차이, 그리고 그 트레이드오프를 정리한 문서다.
+
+## 한 줄 요약
+
+> InnoDB의 기본 격리 수준 REPEATABLE READ는 MVCC 스냅샷 + next-key(gap) lock으로 Phantom Read까지 막고 SBR과 안전하지만, gap lock 때문에 deadlock이 더 잦고 장기 트랜잭션 시 undo가 비대해진다.
+
+---
+
 # 1. MySQL의 기본 격리 수준 = REPEATABLE READ
 
 MySQL(InnoDB)은 **REPEATABLE READ**를 기본 격리 수준으로 사용하며, 대부분의 환경에서 이를 유지하는 것이 권장된다.
@@ -172,3 +182,18 @@ WHERE id IN (SELECT id FROM t2 WHERE status = 'A');
 - [InnoDB Lock - intomysql](http://intomysql.blogspot.com/2010/12/innodb-lock_2880.html)
 - [MySQL Read Committed and Repeatable Read - minsql](http://minsql.com/mysql/MySQL-Read-committed-and-Repeatable-Read/)
 - [InnoDB Transaction Isolation Modes Performance - dimitrik](http://dimitrik.free.fr/blog/archives/2015/02/mysql-performance-impact-of-innodb-transaction-isolation-modes-in-mysql-57.html)
+
+---
+
+# 면접식 설명
+
+> MySQL InnoDB의 기본 격리 수준은 REPEATABLE READ다. SQL 표준에서는 RR에서 Phantom Read가 허용되지만, InnoDB는 MVCC 스냅샷과 gap lock으로 이를 막는다. 일반 SELECT는 트랜잭션 시작 시점 스냅샷을 읽고, `FOR UPDATE`나 범위 조건의 잠금 읽기는 next-key lock으로 범위에 INSERT가 끼어들지 못하게 한다. RR을 유지하는 이유 중 하나는 복제 안전성인데, READ COMMITTED는 gap lock을 안 써서 비결정적 실행이 생기므로 SBR과 호환되지 않고 ROW 포맷이 강제된다. 잠금은 인덱스 레코드 기반이라 PK/Unique 동등 조건이면 record lock만, 범위 조건이면 next-key lock이 걸리고, 인덱스가 없으면 클러스터드 인덱스 전체에 lock이 걸릴 수 있다. 트레이드오프로는 gap lock 충돌로 인한 deadlock 빈도 증가와, 커밋하지 않고 오래 열어둔 트랜잭션이 undo purge를 막아 undo tablespace가 비대해지는 점이 있다.
+
+---
+
+# 관련 문서
+
+- [[binlog_format 값별 동작]]
+- [[MySQL 로그 시스템 (Binlog, Relay, Redo, Undo)]]
+- [[innodb_autoinc_lock_mode 값별 동작]]
+- [[핀테크 금융에서 MySQL vs PostgreSQL]]
