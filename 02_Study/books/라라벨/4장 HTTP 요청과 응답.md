@@ -1,3 +1,15 @@
+---
+type: study-note
+area: backend
+status: raw
+source: 라라벨 (책)
+created: 2026-02-17
+updated: 2026-06-03
+tags:
+  - backend
+  - laravel
+---
+
 ### 1. 요청 핸들링
 
 ### 1-1) 요청 취득
