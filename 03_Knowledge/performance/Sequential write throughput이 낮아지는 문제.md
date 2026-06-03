@@ -12,6 +12,10 @@ tags:
 **Sequential write throughput이 낮아지는 문제**는 보통 스토리지나 파일 시스템이 **순차 쓰기를 실제로는 순차적으로 처리하지 못할 때** 발생한다
 실무에서 자주 나타나는 대표적인 원인은 다음과 같습니다.
 
+## 한 줄 요약
+
+> 순차 쓰기 처리량 저하는 fsync flush, 작은 write, 파일 시스템 fragmentation, page cache writeback throttling, SSD write amplification, RAID write penalty 등으로 인해 순차 write가 실제로는 순차적으로 처리되지 못할 때 발생한다.
+
 ---
 # 1. fsync / sync 호출로 인한 flush
 
@@ -197,3 +201,9 @@ Sequential write throughput이 떨어지는 대표적인 원인
 |page cache writeback|dirty page throttling|
 |SSD write amplification|GC / FTL 영향|
 |RAID penalty|parity 계산|
+
+---
+
+## 관련 문서
+
+- [[MySQL 로그 시스템 (Binlog, Relay, Redo, Undo)]]

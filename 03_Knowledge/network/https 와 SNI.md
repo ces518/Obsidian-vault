@@ -222,3 +222,19 @@ ECH 도입 시 차단 무력화
 > 8. **ECH (Encrypted Client Hello)** = ClientHello 자체를 암호화 → SNI 차단 무력화
 > 9. **CDN의 토대**: Cloudflare, CloudFront 등이 SNI로 origin 라우팅
 > 10. RFC 6066 (2006, SNI) → RFC 9460 (ECH) — HTTPS의 진화 흐름
+
+---
+
+## 면접식 설명
+
+> HTTPS는 HTTP + TLS 구조인데, TLS 핸드셰이크가 HTTP 통신보다 먼저 끝나야 한다는 점에서 문제가 생깁니다. 한 IP에 여러 도메인을 호스팅할 때 서버는 어떤 인증서를 보낼지 정하려면 호스트명을 알아야 하는데, 그 호스트명은 HTTP Host 헤더에 있고 그건 TLS가 끝난 뒤에야 볼 수 있는 닭과 달걀 문제, 즉 순환 의존성이 생깁니다. SNI는 이를 끊기 위해 ClientHello 단계에서 호스트명만 평문으로 미리 흘려보내는 우회로입니다. 서버는 그 SNI를 보고 인증서를 선택합니다. 다만 SNI는 키 협상 이전이라 평문일 수밖에 없어서 "어느 도메인에 접속 중인지"는 노출되고, 한국의 SNI 차단은 바로 이 평문 필드를 ISP가 검사해 차단하는 방식입니다. 이를 해결하려고 ClientHello 자체를 암호화하는 ECH로 진화 중입니다. SNI 덕분에 한 IP로 다수 도메인을 처리할 수 있게 되어 CDN과 가상호스팅의 토대가 되었습니다.
+
+---
+
+## 관련 문서
+
+- [[VPN]]
+- [[http2 http3]]
+- [[Reverse Proxy 와 WAF]]
+- [[DNS 구조]]
+- [[모던 웹과 JWT]]

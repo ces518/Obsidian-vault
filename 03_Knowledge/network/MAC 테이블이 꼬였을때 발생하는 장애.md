@@ -175,3 +175,9 @@ MACA → 포트5
 - [O'Reilly - Ethernet Switching](https://www.oreilly.com/api/v2/epubs/urn%3Aorm%3Abook%3A9781449307974/files/httpatomoreillycomsourceoreillyimages840274.png)
 - [Cisco - Catalyst Switch MAC Table](https://www.cisco.com/c/dam/en/us/support/docs/switches/catalyst-6000-series-switches/23563-143-00.gif)
 - [IPCisco - ARP Spoofing / Dynamic ARP Inspection](https://ipcisco.com/wp-content/uploads/2020/01/arp-spoofing-dynamic-arp-inspection-ipcisco-1.jpg)
+
+---
+
+## 관련 문서
+
+- [[IP 주소 클래스 체계]]

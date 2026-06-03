@@ -16,6 +16,10 @@ created: 2026-03-23
 `PURGE BINARY LOGS`는 **오래된 binlog 파일을 삭제하는 명령**이다.
 binlog은 스냅샷이나 상태 정보 없이 **변경 이벤트만 나열한 파일**이므로, purge는 단순 파일 삭제로 동작한다.
 
+## 한 줄 요약
+
+> Binlog Purge는 이미 반영된 일기장을 찢어버리는 것이다. 현재 데이터는 멀쩡하지만, 과거로 되돌아갈 수 있는 PITR 범위가 줄고, 아직 안 읽은 binlog을 지우면 복제가 깨진다.
+
 ```sql
 PURGE BINARY LOGS BEFORE DATE_SUB(NOW(), INTERVAL 1 DAY);
 ```
@@ -114,3 +118,17 @@ SET PERSIST binlog_expire_logs_seconds = 86400;  -- 1일
 | 자동 삭제 | rotation 시점에만 동작, 디스크 FULL 시 무용 |
 
 > Binlog Purge는 **이미 반영된 일기장을 찢어버리는 것**이다. 현재 데이터는 멀쩡하지만, 과거로 되돌아갈 수 있는 범위가 줄어든다.
+
+---
+
+# 면접식 설명
+
+> `PURGE BINARY LOGS`는 오래된 binlog 파일을 OS에서 그냥 삭제하는 명령이라, 압축이나 스냅샷 생성 없이 파일만 사라진다. 현재 DB 데이터나 운영, redo/undo log에는 영향이 없지만 두 가지를 조심해야 한다. 첫째, PITR은 백업본 + binlog 변경 이력의 조합이라 중간 binlog이 빠지면 이어붙일 수 없어 복구 범위가 줄어든다. 둘째, replica가 아직 안 읽은 binlog을 purge하면 "파일 없음" 에러로 복제가 깨지므로, purge 전에 `SHOW SLAVE STATUS`로 replica가 어디까지 읽었는지 확인해야 한다. `binlog_expire_logs_seconds` 같은 자동 삭제는 rotation 시점에만 동작하고 디스크 FULL 상태에서는 새 binlog 생성 자체가 실패해 purge도 트리거되지 않으므로, 이때는 수동 `PURGE`가 필요하다.
+
+---
+
+# 관련 문서
+
+- [[MySQL 로그 시스템 (Binlog, Relay, Redo, Undo)]]
+- [[MySQL 운영 장애]]
+- [[binlog_format 값별 동작]]

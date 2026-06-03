@@ -13,6 +13,10 @@ created: 2026-04-01
 
 MSS(Maximum Segment Size)는 **TCP 연결에서 한 번에 전송할 수 있는 데이터의 최대 크기**다. TCP 헤더와 IP 헤더를 제외한 **순수 데이터(payload)** 크기를 의미한다.
 
+## 한 줄 요약
+
+> MSS는 MTU에서 IP 헤더와 TCP 헤더를 뺀 순수 데이터의 최대 크기로, 3-way handshake 때 양쪽이 제안한 값 중 더 작은 값으로 협상된다.
+
 ---
 
 # 핵심 개념
@@ -98,3 +102,17 @@ Client                          Server
 # 정리
 
 > MSS = **TCP가 한 번에 보낼 수 있는 순수 데이터의 최대 크기**. MTU에서 IP/TCP 헤더를 뺀 값이며, 3-way handshake 시 양쪽이 협상하여 결정한다.
+
+---
+
+# 면접식 설명
+
+> MSS는 TCP가 한 세그먼트에 담을 수 있는 순수 데이터(payload)의 최대 크기로, 헤더를 포함한 MTU에서 IP 헤더 20바이트와 TCP 헤더 20바이트를 뺀 값입니다. 일반 이더넷에서 MTU가 1500이니 MSS는 1460바이트가 됩니다. 이 값은 3-way handshake 때 SYN/SYN-ACK의 TCP Options 필드로 양쪽이 서로 제안하고, 더 작은 값을 실제 사용 MSS로 정합니다. MSS를 MTU에 맞게 설정하면 IP 단편화를 피할 수 있고, 경로상 가장 작은 MTU에 맞춰 동적으로 조정하는 것이 Path MTU Discovery입니다. VPN(IPSec) 터널이나 PPPoE처럼 추가 헤더가 붙는 환경에서는 그만큼 MSS가 더 작아집니다.
+
+---
+
+# 관련 문서
+
+- [[VPN]]
+- [[TCP 와 UDP]]
+- [[TTL 과 단편화]]

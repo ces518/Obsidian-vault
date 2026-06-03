@@ -11,6 +11,12 @@ tags:
 created: 2026-03-21
 ---
 
+## 한 줄 요약
+
+> 대량 write로 binlog이 폭증하고 replica lag으로 purge가 안 돼 메타 DB 디스크가 FULL이 났는데, connect/select는 정상이고 write만 실패하는 부분 장애라 프록시가 정상으로 착각해 DR 자동 failover가 일어나지 않았다.
+
+---
+
 # 🚨 1. 장애 원인
 
 ## 장애 배경
@@ -256,3 +262,9 @@ SET PERSIST max_binlog_size = 536870912;  -- 512MB
 > Aurora는 failover가 잘 돼서가 아니라, **스토리지 구조상 이 장애 자체가 안 생긴다**는 게 핵심이다.
 
 ---
+
+# 🔗 14. 관련 문서
+
+- [[MySQL 로그 시스템 (Binlog, Relay, Redo, Undo)]]
+- [[Binlog Purge 동작과 영향]]
+- [[binlog_format 값별 동작]]
