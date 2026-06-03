@@ -1,4 +1,9 @@
 ---
+type: study-note
+area: network
+status: raw
+source: AWS 로 배우는 네트워크 (책)
+updated: 2026-06-03
 tags:
   - network
   - TCP
