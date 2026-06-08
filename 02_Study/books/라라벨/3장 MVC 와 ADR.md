@@ -1,14 +1,15 @@
 ---
 type: study-note
+source: 라라벨 (책)
 area: backend
 status: raw
-source: 라라벨 (책)
 created: 2026-02-17
 updated: 2026-06-03
 tags:
   - backend
   - laravel
 ---
+# 3장 MVC 와 ADR
 
 ## 1. MVC와 ADR
 

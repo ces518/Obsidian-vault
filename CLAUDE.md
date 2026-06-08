@@ -517,6 +517,8 @@ tags:
 
 ## 질문 / 헷갈리는 점
 
+## 예시 / 비유
+
 ## Knowledge로 승격할 후보
 
 - 
@@ -527,6 +529,9 @@ tags:
 ```
 
 Study 문서는 원천 메모이므로 과도하게 정제하지 않아도 된다.
+원천 노트가 이미 충분히 정리되어 있다면 위 섹션을 강제하지 않는다.
+`개요` + 자유로운 번호 섹션 + `핵심 요약` + `관련 문서` 형태의 구조도 study-note로 허용한다.
+단, YAML Properties(`type/source/area/status/created/updated/tags`)와 검색 가능한 제목은 갖춘다.
 
 ---
 

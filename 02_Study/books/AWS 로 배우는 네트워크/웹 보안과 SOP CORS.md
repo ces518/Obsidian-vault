@@ -1,8 +1,9 @@
 ---
 type: study-note
+source: AWS 로 배우는 네트워크 (책)
 area: network
 status: raw
-source: AWS 로 배우는 네트워크 (책)
+created: 2026-05-10
 updated: 2026-06-03
 tags:
   - network
@@ -10,8 +11,8 @@ tags:
   - HTTP
   - CORS
   - CSRF
-created: 2026-05-10
 ---
+# 웹 보안과 SOP CORS
 
 ## 개요
 

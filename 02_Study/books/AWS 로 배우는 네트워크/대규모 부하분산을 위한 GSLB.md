@@ -12,6 +12,7 @@ tags:
   - CloudFront
   - 부하분산
 ---
+# 대규모 부하분산을 위한 GSLB
 
 ## 개요
 
