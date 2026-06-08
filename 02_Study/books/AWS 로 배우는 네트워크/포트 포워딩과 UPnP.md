@@ -1,8 +1,9 @@
 ---
 type: study-note
+source: AWS 로 배우는 네트워크 (책)
 area: network
 status: raw
-source: AWS 로 배우는 네트워크 (책)
+created: 2026-05-28
 updated: 2026-06-03
 tags:
   - network
@@ -11,8 +12,8 @@ tags:
   - gateway
   - security
   - AWS
-created: 2026-05-28
 ---
+# 포트 포워딩과 UPnP
 
 ## 개요
 

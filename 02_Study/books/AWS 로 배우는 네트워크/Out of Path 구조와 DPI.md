@@ -1,16 +1,17 @@
 ---
 type: study-note
+source: AWS 로 배우는 네트워크 (책)
 area: network
 status: raw
-source: AWS 로 배우는 네트워크 (책)
+created: 2026-05-17
 updated: 2026-06-03
 tags:
   - network
   - architecture
   - security
   - AWS
-created: 2026-05-17
 ---
+# Out of Path 구조와 DPI
 
 ## 개요
 

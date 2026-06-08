@@ -1,14 +1,15 @@
 ---
 type: study-note
+source: 라라벨 (책)
 area: backend
 status: raw
-source: 라라벨 (책)
 created: 2026-02-17
 updated: 2026-06-03
 tags:
   - backend
   - laravel
 ---
+# 4장 HTTP 요청과 응답
 
 ### 1. 요청 핸들링
 
