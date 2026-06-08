@@ -33,3 +33,6 @@
 .claudian/
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+
+# 실명 포함 raw 원본 — 로컬 보관, 커밋 제외
+06_Archive/deprecated-notes/LDAP (원본 raw).md
