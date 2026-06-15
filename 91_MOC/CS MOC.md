@@ -3,7 +3,7 @@ type: moc
 area: cs
 status: maintained
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-15
 tags:
   - moc
   - cs
@@ -18,3 +18,7 @@ CS 기초(문자 인코딩 등) 문서를 연결하는 허브. 문서가 늘어�
 - [[ASCII 코드]]
 - [[Unicode]]
 - [[UTF-8 가변 길이 처리 원리]]
+
+## OS / 시스템
+
+- [[Socket의 본질과 User-Kernel 모드]]
