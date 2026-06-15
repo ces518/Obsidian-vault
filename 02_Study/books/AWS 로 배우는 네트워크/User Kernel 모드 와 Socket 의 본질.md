@@ -209,6 +209,7 @@ Process → Socket(Write/Send) → Kernel(TCP/IP) → Device Driver → NIC → 
 
 ## 관련 문서
 
+- [[Socket의 본질과 User-Kernel 모드]] (승격된 Knowledge)
 - [[4계층 TCP 헤더 구조와 Buffered IO]]
 - [[NIC  LAN 카드  MAC 주소  Frame]]
 - [[TCP 와 UDP]]
