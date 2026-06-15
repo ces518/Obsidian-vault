@@ -7,6 +7,10 @@ created: 2026-04-01
 updated: 2026-06-03
 tags:
   - network
+  - OS
+  - kernel
+  - socket
+  - IO
 ---
 # User Kernel 모드 와 Socket 의 본질
 
@@ -194,3 +198,19 @@ Process → Socket(Write/Send) → Kernel(TCP/IP) → Device Driver → NIC → 
 > 5. **TCP/IP는 커널에 구현**되어 있으며, Socket을 통해 User Mode에서 접근
 > 6. Physical = 하드웨어 / **Virtual = Logical = 소프트웨어**
 > 7. 클라우드(AWS)는 **가상화 기술**로 구현된 인프라 환경
+
+---
+
+## Knowledge로 승격할 후보
+
+- Socket의 본질 = 파일 (TCP/IP를 추상화한 디바이스 파일)
+- User Mode / Kernel Mode와 디바이스 파일을 통한 간접 접근
+- Buffered I/O vs Non-buffered I/O vs 비동기 I/O
+
+## 관련 문서
+
+- [[4계층 TCP 헤더 구조와 Buffered IO]]
+- [[NIC  LAN 카드  MAC 주소  Frame]]
+- [[TCP 와 UDP]]
+- [[계층별 데이터 단위]]
+- [[택배와 닮은 Packet]]
