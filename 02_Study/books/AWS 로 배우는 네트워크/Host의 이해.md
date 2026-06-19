@@ -7,6 +7,10 @@ created: 2026-04-05
 updated: 2026-06-03
 tags:
   - network
+  - host
+  - endpoint
+  - switch
+  - router
 ---
 # Host의 이해
 
@@ -109,3 +113,21 @@ tags:
 > 4. **인터넷** = Router의 거대한 집합체
 > 5. **프로토콜** = Host 간 통신의 약속된 형식
 > 6. Switch도 네트워크를 이용하는 기능이 있으면 **Host 역할을 겸할 수 있다** (광의의 Host)
+
+---
+
+## Knowledge로 승격할 후보
+
+- Host / Endpoint / Switch의 역할 구분
+- Switch도 Host가 될 수 있다 (광의의 Host)
+
+## 관련 문서
+
+- [[라우터에 대한 최소 이론]]
+- [[스위치가 하는일]]
+- [[L2 스위치]]
+- [[네트워크 장치 구조 Inline Out of Path Proxy]]
+- [[공유기 작동 원리]]
+- [[계층별 데이터 단위]]
+- [[TCP 와 UDP]]
+- [[IPv4 주소의 구조]]
